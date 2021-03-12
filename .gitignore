@@ -1,0 +1,9 @@
+/node_modules/
+/.idea/
+/scripts/
+/migrations/
+/build/
+/test/
+/accounts.json
+/truffle-config.js
+/.secret
