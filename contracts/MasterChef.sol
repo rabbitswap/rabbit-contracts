@@ -8,12 +8,12 @@ import "./libs/SafeBEP20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-import "./VirusToken.sol";
+import "./CarrotToken.sol";
 
-// MasterChef is the master of Virus. He can make Virus and he is a fair guy.
+// MasterChef is the master of CARROT. He can make CARROT and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership
-// will be transferred to a governance smart contract once VIRUS is sufficiently
+// will be transferred to a governance smart contract once CARROT is sufficiently
 // distributed and the community can show to govern itself.
 //
 // Have fun reading it. Hopefully it's bug-free. God bless.
@@ -48,7 +48,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
     }
 
     // The VIRUS TOKEN!
-    VirusToken public virus;
+    CarrotToken public virus;
     // Dev address.
     address public devaddr;
     // VIRUS tokens created per block.
@@ -75,7 +75,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
     event UpdateEmissionRate(address indexed user, uint256 virusPerBlock);
 
     constructor(
-        VirusToken _virus,
+        CarrotToken _virus,
         address _devaddr,
         address _feeAddress,
         uint256 _virusPerBlock,
